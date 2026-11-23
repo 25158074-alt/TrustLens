@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TrustLens helps you review suspicious messages, recognize scam signals, and make safer decisions.">
+  <title>TrustLens — Before you trust the message, check it.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="#top"><span class="brand-mark">T</span> TrustLens</a><span class="header-note">A little caution goes a long way.</span></header>
+  <main id="main" class="layout">
+    <section class="intro"><p class="eyebrow">MESSAGE SAFETY CHECK</p><h1>Before you trust<br>the message, <em>check it.</em></h1><p class="lead">Scams often rely on urgency, fear, or promises that sound too good to be true. Review a message for common warning signs before you act.</p><div class="privacy-note"><span class="dot"></span><span>Analyzed in your browser. Your text isn't sent to a TrustLens server.</span></div></section>
+    <section class="analyzer" aria-labelledby="analyzer-title"><div class="panel-heading"><div><p class="eyebrow">THE CHECKER</p><h2 id="analyzer-title">Review a message</h2></div><span class="counter" id="counter">0 / 5000</span></div>
+      <label for="message">Paste the message you want to check</label><textarea id="message" maxlength="5000" placeholder="Paste an SMS, email, or message here…"></textarea>
+      <div class="samples"><span>Try a sample:</span><button type="button" data-sample="bank">Bank alert</button><button type="button" data-sample="job">Job offer</button><button type="button" data-sample="normal">Everyday note</button></div>
+      <div class="actions"><button class="primary" id="review">Review message <span aria-hidden="true">→</span></button><button class="secondary" id="clear">Clear</button></div><p class="disclaimer">TrustLens looks for patterns—not proof of fraud. Always verify through official channels.</p><div id="result" class="result" aria-live="polite" aria-atomic="true"></div>
+    </section>
+  </main>
+  <footer><span>TrustLens · Digital safety, with a clearer lens.</span><span>Pattern-based analysis · Not a guarantee</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
